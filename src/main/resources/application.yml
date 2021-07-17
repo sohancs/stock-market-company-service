@@ -1,0 +1,24 @@
+server:
+  port: 8000
+  
+spring:
+  application:
+    name: manage-company-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/manage_company
+    #url:  jdbc:mysql://mysql-server-standalone:3306/manage_company
+    username: root
+    password: root
+  
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update 
+   
+eureka:
+  client:
+    enabled: true
+    eureka-server-u-r-l-context: http://localhost:8761
+   
+   
