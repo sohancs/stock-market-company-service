@@ -20,5 +20,14 @@ eureka:
   client:
     enabled: true
     eureka-server-u-r-l-context: http://localhost:8761
+  
+logging:
+  file:
+    name: C:/stock-market-logs/manage-company-service/company_service_logs.log
    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
    

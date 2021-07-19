@@ -93,10 +93,10 @@ public class ManageCompanySevice {
 		List<Company> companiesDetails = repo.findAll();
 		Map<String, Double> latestPriceMap = null;
 
-		// Fetch latest prices of stocks.
-		ResponseEntity<Object> responseEntity = proxy.getAllLatestStockPrice();
-
 		try {
+			// Fetch latest prices of stocks.
+			ResponseEntity<Object> responseEntity = proxy.getAllLatestStockPrice();
+			
 			if (responseEntity.getStatusCode().equals(HttpStatus.OK)) {
 				latestPriceMap = (Map<String, Double>) responseEntity.getBody();
 			}

@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.stockmarket.microservices.exception.CompanyNotFoundException;
 import com.stockmarket.microservices.exception.StockNotFoundException;
 
 @FeignClient(name = "stock-service", path = "/api/v1.0/market/stock")
