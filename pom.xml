@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.stockmarket.microservices</groupId>
-	<artifactId>manage-company-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>manage-company-service</name>
+	<artifactId>company-service</artifactId>
+	<version>1.0.0</version>
+	<name>company-service</name>
 	<description>Manage companies like create, delete, view company details</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -106,7 +106,7 @@
 	</dependencyManagement>
 
 	<build>
-		<!-- <finalName>${project.name}-image:${project.version}</finalName> -->
+		<finalName>stock-market-${project.artifactId}-${project.version}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
