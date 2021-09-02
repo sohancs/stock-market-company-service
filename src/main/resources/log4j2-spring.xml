@@ -5,7 +5,7 @@
 
 	<Properties>
 		<Property name="KAFKA_SERVER">localhost:9092</Property>
-		<Property name="FILE_PATH">C:/stock-market-logs/manage-company-service</Property>
+		<Property name="FILE_PATH">C:/stock-ser-market-logs/manage-company-service</Property>
 		<Property name="APP_NAME">manage-company-service</Property>
 		<Property name="TOPIC">company-service-topic</Property>
 		<Property name="LOG_PATTERN">%d{yyyy-MMM-dd HH:mm:ss.SSS} [%t] %-5level [${TOPIC}] --- %36.36c{1.}:%-5L  - %msg%n</Property>
@@ -40,7 +40,7 @@
 	</Appenders>
 	<Loggers>
 		<Root level="INFO">
-			<!-- <AppenderRef ref="Kafka" /> -->
+			<AppenderRef ref="Kafka" />
 			<AppenderRef ref="stdout" />
 			<AppenderRef ref="file" /> 
 			<!-- <AppenderRef ref="rollingFile" /> -->
